@@ -16,7 +16,7 @@ class GildedRose
 public:
     ::std::vector<Item> & items;
     explicit GildedRose(::std::vector<Item> & items);
-    
+
     void updateQuality();
 };
 

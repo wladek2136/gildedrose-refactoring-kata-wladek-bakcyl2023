@@ -1,9 +1,9 @@
 #include "GildedRose.h"
 
-GildedRose::GildedRose(vector<Item> & items) : items(items)
+GildedRose::GildedRose(::std::vector<Item> & items) : items(items)
 {}
-    
-void GildedRose::updateQuality() 
+
+void GildedRose::updateQuality()
 {
     for (int i = 0; i < items.size(); i++)
     {
