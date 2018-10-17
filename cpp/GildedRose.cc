@@ -1,6 +1,10 @@
 #include "GildedRose.h"
 
+
 GildedRose::GildedRose(::std::vector<Item> const& items) : items(items)
+{}
+
+GildedRose::GildedRose(::std::vector<Item> && items) : items(::std::move(items))
 {}
 
 void GildedRose::updateQuality()
